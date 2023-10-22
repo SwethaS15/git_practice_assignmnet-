@@ -2,14 +2,14 @@ function isPrime (num){
     let count =0;
     for (let i=1;i<=num;i++){
         if(num%i==0){
-            count--;
+            count++;
         }
-    }
-    if(count==1){
-        return "It is a Prime Number"
+    };
+    if(count==2){
+        return "It is a Prime Number";
     }
     else{
-        return "It is not a Prime Number"
+        return "It is not a Prime Number";
     }
 }
-console.log(isPrime(11))
+console.log(isPrime(11));
